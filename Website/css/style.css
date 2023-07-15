@@ -6,7 +6,7 @@ html,
 body {
     --border-radius: 100px;
     --blue: #eaac5a;
-    --pink: #d1a9f2;
+    --pink: #c69fde;
     --green: #d4f4a9;
     --grey: #e2cece;
     --gutter: 3.125vw 6.25vw;
@@ -119,7 +119,7 @@ section.about article .description {
     background: var(--pink);
     border-radius: var(--border-radius);
     padding: var(--gutter);
-    color: #000000;
+    color: #ffffff;
 }
 
 /* service section */
@@ -255,12 +255,12 @@ section.contact a {
     font-size: 100px;
     color: #000000;
     font-weight: bold;
-    transition: filter 2s cubic-bezier(.77,.28,.42,.93);
-    will-change: filter;
+    transition: color 0.5s cubic-bezier(.77, .28, .42, .93);
+    will-change: color;
 }
 
 section.contact a:hover {
-    filter: blur(20px);
+    color: #ffffff;
 }
 /* responsive */
 
