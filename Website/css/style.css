@@ -5,10 +5,10 @@
 html,
 body {
     --border-radius: 100px;
-    --blue: #eaac5a;
-    --pink: #c69fde;
+    --blue: #e6a82c;
+    --pink: #ae87c7;
     --green: #d4f4a9;
-    --grey: #e2cece;
+    --grey: #ffecd6dc;
     --gutter: 3.125vw 6.25vw;
 
     margin: 0;
@@ -115,12 +115,12 @@ section.about article .title {
 section.about article .description {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Adjust alignment to top */
+    flex-direction: column; /* Set column layout */
     background: var(--pink);
     border-radius: var(--border-radius);
     padding: var(--gutter);
     color: #ffffff;
-    flex-direction: row;
 }
 
 /* service section */
@@ -247,7 +247,7 @@ section.service.service-js .text a {
 section.contact {
     align-items: center;
     justify-content: center;
-    background: linear-gradient(var(--blue), var(--green) 60%, var(--pink) 70%, var(--grey));
+    background: linear-gradient(#ae87c7 25%, #e6a82c, #d4f4a9, #ffecd6);
     border-radius: var(--border-radius);
     /* mix-blend-mode: difference; */
 }
@@ -261,7 +261,7 @@ section.contact a {
 }
 
 section.contact a:hover {
-    color: #ffffff;
+    color: #f2e9f7;
 }
 /* responsive */
 
