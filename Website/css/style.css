@@ -266,72 +266,57 @@ section.contact a:hover {
 /* responsive */
 
 @media only screen and (max-width: 700px) {
-    /* ... (other responsive styles) ... */
+    html, body {
+        --border-radius: 40px;
+        --gutter: 5%;
+    }
 
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    section {
+        top: 60px;
+    }
+
+    /* About Section */
     section.about .empty {
         display: none; /* Hide the empty div in mobile version */
     }
 
     section.about article {
-        flex-direction: column; /* Change the layout to column for about section in mobile version */
+        flex-direction: column; /* Change the layout to column for the about section in mobile version */
     }
 
     section.about article .title {
-        align-items: center; /* Center align the title */
-        flex-direction: row;
+        align-items: center; /* Center align the title horizontally */
+        justify-content: center; /* Center the title vertically */
     }
 
     section.about article .title h1 {
-        font-size: 50px; /* Adjusted font size for h1 in mobile version */
-        flex-direction: row;
+        font-size: 30px; /* Adjusted font size for h1 in mobile version */
     }
 
     section.about article .description {
         padding: var(--gutter);
         color: #ffffff;
-        flex-direction: row;
-    }
-}
-    h1 {
-        font-size: 40px; /* Adjusted font size for h1 */
+        font-size: 10px; /* Reduce font size for better fit */
+        text-align: center; /* Center align the text */
     }
 
-    h2 {
-        font-size: 30px; /* Adjusted font size for h2 */
-    }
-
-    nav ul li {
-        margin-left: 20px; /* Adjusted margin for nav items */
-    }
-
-    section {
-        top: 60px; /* Adjusted top value for sections to avoid overlapping with the fixed navigation */
-    }
-
-    section.about .empty {
-        flex-basis: 10%; /* Make the empty div occupy the full width */
-        flex-direction: row;
-    }
-
-    section.about article .title {
-        flex-basis: 50%; /* Make the title div occupy the full width */
-        flex-direction: row;
-    }
-
-    section.about article .description {
-        flex: 1;
-        padding: var(--gutter);
-        color: #ffffff;
-        flex-direction: row;
-        align-items: center;
-    }
-
+    /* Service Section */
     section.service article {
-        flex-direction: column; /* Change the layout to column for service articles */
-        flex-direction: row;
+        flex-direction: column; /* Change the layout to column for service articles in mobile version */
     }
 
-    /* Adjust image and box sizes in the service section */
     section.service figure {
         flex-basis: 30%; /* Make the figure div smaller to fit the screen */
         max-width: 30%; /* Make the figure div's max-width smaller */
@@ -347,6 +332,7 @@ section.contact a:hover {
         font-size: 14px; /* Reduce font size for better fit */
     }
 
+    /* Contact Section */
     section.contact {
         border-radius: 0;
     }
@@ -355,24 +341,7 @@ section.contact a:hover {
         font-size: 40px;
         transform: rotate(90deg);
     }
-
-    /* Adjust layout for about section in mobile version */
-    section.about article .title {
-        align-items: center;
-        justify-content: center; /* Center the title both vertically and horizontally */
-    }
-
-    section.about article .title h1 {
-        font-size: 30px; /* Adjusted font size for h1 in mobile version */
-    }
-
-    section.about article .description {
-        flex: 1;
-        padding: var(--gutter);
-        color: #ffffff;
-        font-size: 10px; /* Reduce font size for better fit */
-    }
-
+}
 
 
 
