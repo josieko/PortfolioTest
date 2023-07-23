@@ -94,6 +94,8 @@ section.about .empty {
     background: var(--grey);
     border-radius: var(--border-radius);
     transition: flex-basis 1s cubic-bezier(0,.9,.4,.99);
+    max-width: 30%;
+    min-width: 10%;
 }
 
 section.about article {
@@ -162,7 +164,7 @@ section.service .text a {
 
 /* service section animations */
 
-section.service.service-html figure img {
+section.service.service-programming figure img {
     animation-name: float;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -170,7 +172,7 @@ section.service.service-html figure img {
     animation-timing-function: cubic-bezier(.77,.28,.42,.93);
 }
 
-section.service.service-css figure img {
+section.service.service-pm figure img {
     animation-name: scale;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -178,7 +180,7 @@ section.service.service-css figure img {
     animation-timing-function: cubic-bezier(.77,.28,.42,.93);
 }
 
-section.service.service-js figure img {
+section.service.service-ux figure img {
     animation-name: rotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -215,31 +217,38 @@ section.service.service-js figure img {
 
 /* service section overrides */
 
-section.service.service-html figure {
+section.service.service-programming figure {
     background: var(--green);
+    max-width: 60%;
 }
 
-section.service.service-html .text h2,
-section.service.service-html .text a {
+section.service.service-programming .text h2,
+section.service.service-programming .text a {
     color: var(--pink);
+    max-width: 60%;
 }
 
-section.service.service-css figure {
+section.service.service-pm figure {
     background: var(--blue);
+    max-width: 60%;
 }
 
-section.service.service-css .text h2,
-section.service.service-css .text a {
+section.service.service-pm .text h2,
+section.service.service-pm .text a {
     color: var(--green);
+    max-width: 60%;
 }
 
-section.service.service-js figure {
+section.service.service-ux figure {
     background: var(--pink);
+    max-width: 50%;
 }
 
-section.service.service-js .text h2,
-section.service.service-js .text a {
+section.service.service-ux .text h2,
+section.service.service-ux .text a {
     color: var(--blue);
+    max-width: 60%;
+   
 }
 
 /* contact section */
