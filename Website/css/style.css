@@ -367,6 +367,7 @@ section.contact a:hover {
         align-items: center;
         justify-content: center; /* Center the title both vertically and horizontally */
         flex: 0.5;
+        flex-basis: 30%; /* Set the title to take up no more than 30% of the space */
     }
 
     section.about article .title h1 {
@@ -378,7 +379,9 @@ section.contact a:hover {
         padding: var(--gutter);
         color: #ffffff;
         font-size: 16px; /* Reduce font size for better fit */
+        flex-basis: 70%; /* Set the description to take up 70% of the space */
     }
+
 
 
 
