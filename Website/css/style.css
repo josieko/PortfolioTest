@@ -219,7 +219,7 @@ section.service.service-ux figure img {
 
 section.service.service-programming figure {
     background: var(--green);
-    max-width: 60%;
+    max-width: 40%;
 }
 
 section.service.service-programming .text h2,
@@ -230,7 +230,7 @@ section.service.service-programming .text a {
 
 section.service.service-pm figure {
     background: var(--blue);
-    max-width: 60%;
+    max-width: 40%;
 }
 
 section.service.service-pm .text h2,
@@ -241,7 +241,7 @@ section.service.service-pm .text a {
 
 section.service.service-ux figure {
     background: var(--pink);
-    max-width: 50%;
+    max-width: 40%;
 }
 
 section.service.service-ux .text h2,
