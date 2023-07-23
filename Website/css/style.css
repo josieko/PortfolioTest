@@ -278,20 +278,22 @@ section.contact a:hover {
 
     section.about article .title {
         align-items: center; /* Center align the title */
+        flex-basis: 20%; /* Set the height of the "Josie Cue" box to 20% */
     }
 
     section.about article .title h1 {
-        font-size: 30px; /* Adjusted font size for h1 in mobile version */
+        font-size: 24px; /* Adjusted font size for h1 in mobile version */
     }
 
     section.about article .description {
         padding: var(--gutter);
         color: #ffffff;
-        font-size: 10px; /* Reduce font size for better fit */
-        display: flex; /* Add display flex to enable flex properties */
-        flex-direction: column; /* Set column layout for the description boxes */
-        align-items: center; /* Center align the items horizontally */
-        justify-content: center; /* Center align the items vertically */
+        font-size: 15px; /* Reduce font size for better fit */
+        flex-basis: 40%; /* Set the height of the description box to 40% */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
     h1 {
