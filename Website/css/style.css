@@ -288,8 +288,8 @@ section.contact a:hover {
     section.about article .description {
         padding: var(--gutter);
         color: #ffffff;
-        font-size: 15px; /* Reduce font size for better fit */
-        flex-basis: 40%; /* Set the height of the description box to 40% */
+        font-size: 13px; /* Reduce font size for better fit */
+        flex-basis: 60%; /* Set the height of the description box to 40% */
         display: flex;
         flex-direction: column;
         align-items: center;
