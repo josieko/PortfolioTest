@@ -378,7 +378,7 @@ section.contact a:hover {
         flex: 3;
         padding: var(--gutter);
         color: #ffffff;
-        font-size: 16px; /* Reduce font size for better fit */
+        font-size: 14px; /* Reduce font size for better fit */
         flex-basis: 50%; /* Set the description to take up 70% of the space */
     }
 
