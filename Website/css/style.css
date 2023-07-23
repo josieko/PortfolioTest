@@ -296,7 +296,18 @@ section.contact a:hover {
         align-items: center;
         justify-content: center;
     }
+
+    section.contact {
+        border-radius: 0;
+    }
+
+    section.contact a {
+        font-size: 40px;
+        transform: rotate(90deg);
+    }
 }
+    
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 40px; /* Adjusted font size for h1 */
     }
@@ -335,6 +346,7 @@ section.contact a:hover {
     section.service article {
         flex-direction: column; /* Change the layout to column for service articles */
         flex-direction: row;
+        flex-shrink: 30%;
     }
 
     /* Adjust image and box sizes in the service section */
@@ -359,7 +371,7 @@ section.contact a:hover {
 
     section.contact a {
         font-size: 40px;
-        transform: rotate(90deg);
+        
     }
 
     /* Adjust layout for about section in mobile version */
@@ -378,9 +390,17 @@ section.contact a:hover {
         flex: 3;
         padding: var(--gutter);
         color: #ffffff;
+        font-size: 16px; /* Reduce font size for better fit */
         font-size: 14px; /* Reduce font size for better fit */
         flex-basis: 50%; /* Set the description to take up 70% of the space */
     }
+}
+
+
+
+
+
+
 
 
 
